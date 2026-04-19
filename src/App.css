@@ -1,0 +1,158 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6278 100%);
+  overflow: hidden;
+}
+
+
+.info {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #ecf0f1;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+
+.status {
+  font-weight: bold;
+}
+
+
+.status.win {
+  color: #f1c40f;
+}
+
+
+.reset-btn {
+  padding: 0.4rem 1rem;
+  font-size: inherit;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.reset-btn:hover {
+  background: #c0392b;
+}
+
+
+.board-container {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+
+.board {
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  background: #ecf0f1;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+
+.dialog {
+  background: #ecf0f1;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #2c3e50;
+  min-width: min(320px, 85vw);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+.dialog h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+
+.dialog p {
+  margin: 0.5rem 0;
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+}
+
+
+.primary-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.primary-btn:hover {
+  background: #1e8449;
+}
+
+
+.room-tag {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+}
+
+
+.my-symbol {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  opacity: 0.85;
+}
+
+.progress-wrap {
+  width: min(300px, 70vw);
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 1rem auto 0.5rem;
+  overflow: hidden;
+}
+
+
+.progress-bar {
+  height: 100%;
+  background: #27ae60;
+  border-radius: 4px;
+  transition: width 0.5s linear;
+}
+
+
+.hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
