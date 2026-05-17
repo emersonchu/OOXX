@@ -3,7 +3,7 @@ import "./App.css";
 
 
 // 換成你在 Render 部署後拿到的網址
-const SERVER_HOST = "your-app-name.onrender.com";
+const SERVER_HOST = " https://pyooxx.onrender.com";
 const WS_URL = `wss://${SERVER_HOST}/ws`;
 const HEALTH_URL = `https://${SERVER_HOST}/health`;
 
